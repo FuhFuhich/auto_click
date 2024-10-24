@@ -40,7 +40,7 @@ int main()
     {
         while (check_hot_key(msg, flag))
         {
-            auto_click();
+            auto_click(); 
         }
     }
 
