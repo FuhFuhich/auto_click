@@ -13,7 +13,7 @@ void auto_click()
     while (flag) // Пока флаг включен
     {
         mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0); // Нажатие левой кнопки мыши
-        Sleep(1000); // Пауза в 1 секунду
+        Sleep(10);
         mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0); // Отпускание левой кнопки мыши
         Sleep(1000); // Пауза в 1 секунду
     }
