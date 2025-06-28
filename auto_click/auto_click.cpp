@@ -33,12 +33,14 @@ void stop_auto_click()
 
 void start_long_click()
 {
-    mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0); // Нажатие левой кнопки мыши
+    //mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0); // Нажатие левой кнопки мыши
+    keybd_event(0x46, 0, 0, 0);
 }
 
 void stop_long_click()
 {
-    mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0); // Отпускание левой кнопки мыши
+    //mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0); // Отпускание левой кнопки мыши
+    keybd_event(0x46, 0, KEYEVENTF_KEYUP, 0);
 }
 
 bool check_hot_key(const MSG& msg, int hotkey_id)
